@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Local CSS -->
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,400;1,800&display=swap"&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">    <!-- Local CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -16,19 +17,52 @@
 
 <body>
     <header>
-        <h1>brewery-finder</h1>
-
+        <h1 id="head-content">brewery-finder</h1>
+        <p id="head-content" class="sub-head">Looking for a local brewery? Enter your city</p>
     </header>
+    <section>
+        <form>
+            <input id="input" type="text" placeholder="Enter a city">
+            <input id="submit" type="submit" placeholder="Find">
+        </form>
+    </section>
     <main>
-        <h3 id="name">Brewery</h3>
-        <p id="address">123 Main St</p>
-        <p id="city">Anytown</p>
+      <section id="breweries">
+
+        <article class="location">
+            <h3 id="name">Brewery</h3>
+            <p id="address">123 Main St</p>
+            <p id="city">Anytown</p>
+            <p id="type">type of brewery</p>
+        </article>
+        <article class="location">
+            <h3 id="name">Brewery</h3>
+            <p id="address">123 Main St</p>
+            <p id="city">Anytown</p>
+            <p id="type">type of brewery</p>
+        </article>
+        <article class="location">
+            <h3 id="name">Brewery</h3>
+            <p id="address">123 Main St</p>
+            <p id="city">Anytown</p>
+            <p id="type">type of brewery</p>
+        </article>
+        <article class="location">
+            <h3 id="name">Brewery</h3>
+            <p id="address">123 Main St</p>
+            <p id="city">Anytown</p>
+            <p id="type">type of brewery</p>
+        </article>
+        
+      </section>
+    
     </main>
-    <form>
-        <input id="input" type="text" placeholder="Enter a city">
-        <input id="submit" type="submit" placeholder="Find">
-    </form>
+   <footer>
+       <p>Copyright &copy; 2020 brewery-finder</p>
+   </footer>
 
 </body>
 
 </html>
+
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@1&display=swap" rel="stylesheet">
