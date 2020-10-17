@@ -3,3 +3,71 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    font-family: 'Source Sans Pro', sans-serif; */
+}
+
+header {
+    font-family: 'Epilogue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: tan;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+
+}
+#head-content {
+    margin-left: 25px;
+}
+.sub-head {
+    font-style: italic;
+    font-size: 200;
+}
+
+h1 {
+    padding: 5px 0 5px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    background-color: coral;
+}
+
+form {
+    margin: 15px 0 15px 25px;
+}
+ #breweries {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+.location {
+    height: 150px;
+    width: 300px;
+    border: 1px dotted black;
+    margin: 10px;
+
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    background-color: lightblue;
+}
+
+/* font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Source Sans Pro', sans-serif; */
