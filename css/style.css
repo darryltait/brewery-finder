@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;  */
 }
 
 header {
@@ -16,6 +16,10 @@ header {
     display: flex;
     flex-direction: column;
     background-color: tan;
+    /* background-color: rgb(100,100,100); */
+    background-color: black;
+    color: rgb(150,150,150);
+
     align-items: flex-start;
     justify-content: center;
     padding: 20px 0 20px 0;
@@ -38,12 +42,21 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
+    background-image: url("beerduo30flat.jpg");
+    background-size: cover;
+    background-position: center;
 
     background-color: coral;
 }
 
 form {
     margin: 15px 0 15px 25px;
+}
+img {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
  #breweries {
      display: flex;
@@ -54,20 +67,72 @@ form {
  }
 
 .location {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     width: 300px;
-    border: 1px dotted black;
-    margin: 10px;
+    margin: 15px;
+    border-bottom: 1px solid gray;
+    /* border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px gray;
+    background-color: rgba(255,255,255,0.65);  */
+    /* background-color: white; */
+    /* opacity: 0.7; */
 
 }
 
+
+
 footer {
-    height: 50px;
+    /* height: 50px; */
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    /* background-color: rgb(100,100,100); */
+    background-color: black;
+    color: rgb(150,150,150);
+}
+
+footer > p {
     margin-left: 25px;
-    background-color: lightblue;
+
+}
+
+#modal {
+    text-transform: capitalize;
+    line-height: 30px;
+    font-size: 20px;
 }
 
 /* font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Source Sans Pro', sans-serif; */
+@media only screen and (max-width: 768px) {
+  .location {
+      height: 75px;
+  }
+  #info input{
+    font-size: 18px;;
+}
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 125px;
+        font-size: 1.75em;
+    
+    }
+    #info input{
+        font-size: 25px;;
+    }
+
+    /* .location{
+        font-size: 17px;
+    } */
+
+    
+}
