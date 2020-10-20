@@ -12,4 +12,4 @@ Enter a city name to find breweries nearby.
 
 ## Approach taken:
 
-I wanted to make an easy way to find local breweris in my city, or anywhere in the U.S., for that matter. By inputting a city, a list of local breweries will be returned.
+I wanted to make an easy way to find local breweries in my city, or anywhere in the U.S., for that matter. By inputting a city, a list of local breweries will be returned.
