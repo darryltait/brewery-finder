@@ -8,7 +8,8 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    font-family: 'Source Sans Pro', sans-serif;  */
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 600;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     background-color: tan;
     /* background-color: rgb(100,100,100); */
     background-color: black;
-    color: rgb(150,150,150);
+    color: rgb(228,208,198);
 
     align-items: flex-start;
     justify-content: center;
@@ -45,13 +46,15 @@ main {
     background-image: url("../images/beerduotone.jpg");
     background-size: cover;
     background-position: center;
+    
 
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 form {
     margin: 15px 0 15px 25px;
 }
+
 img {
     height: 100px;
     position: absolute;
@@ -74,7 +77,9 @@ img {
     height: 120px;
     width: 300px;
     margin: 15px;
-    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(203,144,110);
+    text-align: center;
     /* border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 1px 1px 8px gray;
@@ -90,14 +95,16 @@ footer {
     /* height: 50px; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 0;
     /* background-color: rgb(100,100,100); */
     background-color: black;
-    color: rgb(150,150,150);
+    color: rgb(228,208,198);
+    font-size: 15px;
 }
 
 footer > p {
-    margin-left: 25px;
+    margin: 0 25px;
 
 }
 
@@ -126,8 +133,9 @@ font-family: 'Source Sans Pro', sans-serif; */
         font-size: 1.75em;
     
     }
-    #info input{
-        font-size: 25px;;
+    form #info {
+        font-size: 55px;
+        color: blue;
     }
 
     /* .location{
