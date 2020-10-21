@@ -13,17 +13,16 @@ const $main = $('main');
 const $name = $('#name');
 const $address = $('#address');
 const $city = $('#city');
-const $type = $('#type');
+//const $type = $('#type');
 const $input = $('#input');
 const $submit = $('#submit');
 const $breweries = $('#breweries');
-const $modal = $('.modal');
 
 
 
 // Event listeners
 $submit.on('click', handleGetData);
-$breweries.on('click', 'article', handleClick);
+// $breweries.on('click', 'article', handleClick);
 
 
 
@@ -32,7 +31,7 @@ $breweries.on('click', 'article', handleClick);
 function handleGetData(event) {
     event.preventDefault();
     userInput = $input.val();
-    brewType = $type.val();
+    //brewType = $type.val();
     if(!userInput) return;
     // $.ajax(BASE_URL + userInput + '&by_type=' + brewType)
 
@@ -48,7 +47,9 @@ function handleGetData(event) {
         //     <h3 id="name">Sorry, can't find a brewery in this city. Try again. Maybe you should open one here?</h3>
         //     </article>
         //     `);
-        //     return
+        //     render();
+        //     $input.val('');
+
         // }
 
         render();
@@ -60,7 +61,7 @@ function handleGetData(event) {
 
 function generateUI() {
     return breweryInfo.map(function(brewery){
-        
+        // skip over listings that have no street address to not include breweries not open yet
         if(brewery.street){
         return `
             <article data-url="${brewery.url}" class="location">    
@@ -74,36 +75,36 @@ function generateUI() {
         
     }
 
-    function handleClick() {
-        console.log(this);
+    // function handleClick() {
+    //     console.log(this);
         
 
-        console.log('url: ,', breweryInfo);
+    //     console.log('url: ,', breweryInfo);
 
-        $modal.html(breweryInfo.map(function(brewery){
-            return `
-                <article data-url="${brewery.url}" class="location">    
-                <h3 id="name">${brewery.name}</h3>
-                <p id="address">${brewery.street}</p>
-                <p id="city">${brewery.city}</p>
-                </article>
-                `;
-            }));
-        // return breweryInfo.map(function(brewery){
-        //     return `
-        //     <p id="city">${brewery.city}</p>
-        //     `;
-        //     $modal.modal();
+    //     $modal.html(breweryInfo.map(function(brewery){
+    //         return `
+    //             <article data-url="${brewery.url}" class="location">    
+    //             <h3 id="name">${brewery.name}</h3>
+    //             <p id="address">${brewery.street}</p>
+    //             <p id="city">${brewery.city}</p>
+    //             </article>
+    //             `;
+    //         }));
+    //     // return breweryInfo.map(function(brewery){
+    //     //     return `
+    //     //     <p id="city">${brewery.city}</p>
+    //     //     `;
+    //     //     $modal.modal();
 
-            //$name.text(brewery.name);
-            //$moves.text(`Moves: ${pokemonDetail.moves.length}`);
-            //$abilities.text(`Abilities: ${pokemonDetail.abilities.length}`);
+    //         //$name.text(brewery.name);
+    //         //$moves.text(`Moves: ${pokemonDetail.moves.length}`);
+    //         //$abilities.text(`Abilities: ${pokemonDetail.abilities.length}`);
 
 
-           // });
-        //alert(url.brewery.name);
-        //handleGetData(url);
-    }
+    //        // });
+    //     //alert(url.brewery.name);
+    //     //handleGetData(url);
+    // }
         
     function render() {
         console.log('Brewery info: ', breweryInfo);

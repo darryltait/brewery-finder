@@ -1,3 +1,7 @@
+:root {
+    --light-copy-color: rgb(232, 213, 204);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,8 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
 }
 
@@ -17,22 +20,18 @@ header {
     display: flex;
     flex-direction: column;
     background-color: tan;
-    /* background-color: rgb(100,100,100); */
     background-color: black;
-    color: rgb(232,213,204);
-
+    color: var(--light-copy-color);
     align-items: flex-start;
     justify-content: center;
     padding: 20px 0 20px 0;
 
 }
-#head-content {
+
+.head-content {
     margin-left: 25px;
 }
-.sub-head {
-    font-style: italic;
-    font-size: 200;
-}
+
 
 h1 {
     padding: 5px 0 5px 0;
@@ -43,16 +42,18 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
-    background-image: url("../images/beerduo45.jpg");
+    background-image: url("../images/beerduotone.jpg");
     background-size: cover;
     background-position: center;
-    
 
-    /* background-color: coral; */
 }
 
 form {
     margin: 15px 0 15px 25px;
+}
+
+form #input {
+    margin-right: 10px;
 }
 
 img {
@@ -61,13 +62,14 @@ img {
     top: 0;
     right: 0;
 }
- #breweries {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
 
- }
+#breweries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .location {
     display: flex;
@@ -78,71 +80,30 @@ img {
     width: 300px;
     margin: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-
-    /* border-bottom: 1px solid rgb(212,167,146); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* border: 1px solid gray;
-    border-radius: 10px;
-    box-shadow: 1px 1px 8px gray;
-    background-color: rgba(255,255,255,0.65);  */
-    /* background-color: white; */
-    /* opacity: 0.7; */
 
 }
 
-
-
 footer {
-    /* height: 50px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    /* background-color: rgb(100,100,100); */
     background-color: black;
-    color: rgb(232,213,204);
+    color: var(--light-copy-color);
     font-size: 15px;
 }
 
-footer > p {
+footer>p {
     margin: 0 25px;
 
 }
 
-#modal {
-    text-transform: capitalize;
-    line-height: 30px;
-    font-size: 20px;
-}
-
-/* font-family: 'Gloria Hallelujah', cursive;
-font-family: 'Source Sans Pro', sans-serif; */
 @media only screen and (max-width: 768px) {
-  .location {
-      height: 75px;
-  }
-  #info input{
-    font-size: 18px;;
-}
-
-    
-}
-
-@media only screen and (min-width: 768px) {
-    header {
-        height: 125px;
-        font-size: 1.75em;
-    
+    .location {
+        height: 100px;
     }
-    form #info {
-        font-size: 55px;
-        color: blue;
-    }
-
-    /* .location{
-        font-size: 17px;
-    } */
-
-    
 }
+
+@media only screen and (min-width: 768px) {}
