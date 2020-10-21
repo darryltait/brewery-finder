@@ -3,7 +3,8 @@
 
 const BASE_URL = 'https://api.openbrewerydb.org/breweries?by_city=';
 
-let userInput, breweryInfo;
+let userInput;
+// let breweryInfo;
 
 
 
@@ -32,6 +33,7 @@ function handleGetData(event) {
     event.preventDefault();
     userInput = $input.val();
     //brewType = $type.val();
+    // check to see if any info was entered
     if(!userInput) return;
     // $.ajax(BASE_URL + userInput + '&by_type=' + brewType)
 
@@ -64,7 +66,7 @@ function generateUI() {
         // skip over listings that have no street address to not include breweries not open yet
         if(brewery.street){
         return `
-            <article data-url="${brewery.url}" class="location">    
+            <article  class="location">    
             <h3 id="name">${brewery.name}</h3>
             <p id="address">${brewery.street}</p>
             <p id="city">${brewery.city}</p>
