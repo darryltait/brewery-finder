@@ -29,4 +29,4 @@ Enter a city, click button and find a brewery
 ## Next Steps
 
 - Add another input area to filter for brewpubs, micro-breweries, regional beers
-- See if there's an API that would let you see if the place serves food
+- See if there's an API that would let you see if the place serves food or if there are restaurants nearby
