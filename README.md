@@ -21,6 +21,7 @@ After a search
 - Google Fonts - for using custom fonts
 
 ## Getting Started
+Link to site:
 
 https://darryltait.github.io/brewery-finder
 
